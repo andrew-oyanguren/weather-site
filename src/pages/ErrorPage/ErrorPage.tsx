@@ -1,3 +1,18 @@
+import { useNavigate } from 'react-router-dom';
+import { Button } from 'src/components';
+
 export default function ErrorPage() {
-  return <h1>Error Page</h1>;
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <h1>404</h1>
+      <p>
+        Oops, page could not been found. Please use the button to return to the
+        home page.
+      </p>
+
+      <Button onClick={() => navigate('/')} text='Home' />
+    </>
+  );
 }
