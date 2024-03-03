@@ -4,7 +4,7 @@ export default function SignInForm() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    console.log('[handleSubmit] form submitted...');
+    console.log('[handleSubmit] form submition fired...');
   };
 
   return (
@@ -16,7 +16,7 @@ export default function SignInForm() {
         </div>
 
         <div className='inputWrapper'>
-          <label htmlFor='password'>Email</label>
+          <label htmlFor='password'>Password</label>
           <input id='password' type='password' placeholder='*******' />
         </div>
       </div>
